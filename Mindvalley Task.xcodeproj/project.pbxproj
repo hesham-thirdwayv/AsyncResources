@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0412EA741F792863003A9C11 /* ImagesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0412EA731F792863003A9C11 /* ImagesCollectionViewController.swift */; };
+		0412EA761F792AEE003A9C11 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0412EA751F792AEE003A9C11 /* ImageCollectionViewCell.swift */; };
+		04CD28821F796C620017515F /* UIImageViewAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CD28811F796C620017515F /* UIImageViewAsync.swift */; };
 		04D487E61F75A6C90014BF2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D487E51F75A6C90014BF2A /* AppDelegate.swift */; };
-		04D487E81F75A6C90014BF2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D487E71F75A6C90014BF2A /* ViewController.swift */; };
 		04D487EB1F75A6C90014BF2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D487E91F75A6C90014BF2A /* Main.storyboard */; };
 		04D487ED1F75A6C90014BF2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D487EC1F75A6C90014BF2A /* Assets.xcassets */; };
 		04D487F01F75A6C90014BF2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D487EE1F75A6C90014BF2A /* LaunchScreen.storyboard */; };
 		04D487FB1F75A6C90014BF2A /* Mindvalley_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D487FA1F75A6C90014BF2A /* Mindvalley_TaskTests.swift */; };
 		04D488061F75A6C90014BF2A /* Mindvalley_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D488051F75A6C90014BF2A /* Mindvalley_TaskUITests.swift */; };
+		04D4881B1F75AD4C0014BF2A /* MindValleyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D4881A1F75AD4C0014BF2A /* MindValleyService.swift */; };
+		04D4881D1F75ADBB0014BF2A /* ImagesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D4881C1F75ADBB0014BF2A /* ImagesService.swift */; };
+		04D4881F1F75AE790014BF2A /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D4881E1F75AE790014BF2A /* Image.swift */; };
+		04D488231F75B3B00014BF2A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04D488221F75B3B00014BF2A /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +40,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0412EA731F792863003A9C11 /* ImagesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesCollectionViewController.swift; sourceTree = "<group>"; };
+		0412EA751F792AEE003A9C11 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		04CD28811F796C620017515F /* UIImageViewAsync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewAsync.swift; sourceTree = "<group>"; };
 		04D487E21F75A6C90014BF2A /* Mindvalley Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mindvalley Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D487E51F75A6C90014BF2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04D487E71F75A6C90014BF2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04D487EA1F75A6C90014BF2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		04D487EC1F75A6C90014BF2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04D487EC1F75A6C90014BF2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Views/Assets.xcassets; sourceTree = "<group>"; };
 		04D487EF1F75A6C90014BF2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		04D487F11F75A6C90014BF2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04D487F11F75A6C90014BF2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Application/Info.plist; sourceTree = "<group>"; };
 		04D487F61F75A6C90014BF2A /* Mindvalley TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mindvalley TaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D487FA1F75A6C90014BF2A /* Mindvalley_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mindvalley_TaskTests.swift; sourceTree = "<group>"; };
 		04D487FC1F75A6C90014BF2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04D488011F75A6C90014BF2A /* Mindvalley TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mindvalley TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D488051F75A6C90014BF2A /* Mindvalley_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mindvalley_TaskUITests.swift; sourceTree = "<group>"; };
 		04D488071F75A6C90014BF2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04D4881A1F75AD4C0014BF2A /* MindValleyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MindValleyService.swift; sourceTree = "<group>"; };
+		04D4881C1F75ADBB0014BF2A /* ImagesService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesService.swift; sourceTree = "<group>"; };
+		04D4881E1F75AE790014BF2A /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		04D488221F75B3B00014BF2A /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04CD28801F796C250017515F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				04CD28811F796C620017515F /* UIImageViewAsync.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		04D487D91F75A6C90014BF2A = {
 			isa = PBXGroup;
 			children = (
@@ -97,8 +117,12 @@
 		04D487E41F75A6C90014BF2A /* Mindvalley Task */ = {
 			isa = PBXGroup;
 			children = (
-				04D487E51F75A6C90014BF2A /* AppDelegate.swift */,
-				04D487E71F75A6C90014BF2A /* ViewController.swift */,
+				04CD28801F796C250017515F /* Utilities */,
+				04D488171F75A7B10014BF2A /* Application */,
+				04D488161F75A75D0014BF2A /* Services */,
+				04D488151F75A74A0014BF2A /* View Controllers */,
+				04D488141F75A73F0014BF2A /* Views */,
+				04D488131F75A7340014BF2A /* Models */,
 				04D487E91F75A6C90014BF2A /* Main.storyboard */,
 				04D487EC1F75A6C90014BF2A /* Assets.xcassets */,
 				04D487EE1F75A6C90014BF2A /* LaunchScreen.storyboard */,
@@ -123,6 +147,48 @@
 				04D488071F75A6C90014BF2A /* Info.plist */,
 			);
 			path = "Mindvalley TaskUITests";
+			sourceTree = "<group>";
+		};
+		04D488131F75A7340014BF2A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04D4881E1F75AE790014BF2A /* Image.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04D488141F75A73F0014BF2A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04D488151F75A74A0014BF2A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0412EA731F792863003A9C11 /* ImagesCollectionViewController.swift */,
+				0412EA751F792AEE003A9C11 /* ImageCollectionViewCell.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		04D488161F75A75D0014BF2A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				04D4881A1F75AD4C0014BF2A /* MindValleyService.swift */,
+				04D4881C1F75ADBB0014BF2A /* ImagesService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		04D488171F75A7B10014BF2A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				04D487E51F75A6C90014BF2A /* AppDelegate.swift */,
+				04D488221F75B3B00014BF2A /* Localizable.strings */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04D487F01F75A6C90014BF2A /* LaunchScreen.storyboard in Resources */,
+				04D488231F75B3B00014BF2A /* Localizable.strings in Resources */,
 				04D487ED1F75A6C90014BF2A /* Assets.xcassets in Resources */,
 				04D487EB1F75A6C90014BF2A /* Main.storyboard in Resources */,
 			);
@@ -262,8 +329,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04D487E81F75A6C90014BF2A /* ViewController.swift in Sources */,
+				04D4881B1F75AD4C0014BF2A /* MindValleyService.swift in Sources */,
+				04D4881D1F75ADBB0014BF2A /* ImagesService.swift in Sources */,
+				0412EA761F792AEE003A9C11 /* ImageCollectionViewCell.swift in Sources */,
 				04D487E61F75A6C90014BF2A /* AppDelegate.swift in Sources */,
+				0412EA741F792863003A9C11 /* ImagesCollectionViewController.swift in Sources */,
+				04D4881F1F75AE790014BF2A /* Image.swift in Sources */,
+				04CD28821F796C620017515F /* UIImageViewAsync.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +377,7 @@
 				04D487EA1F75A6C90014BF2A /* Base */,
 			);
 			name = Main.storyboard;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		04D487EE1F75A6C90014BF2A /* LaunchScreen.storyboard */ = {
@@ -313,6 +386,7 @@
 				04D487EF1F75A6C90014BF2A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -415,8 +489,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 6GHM8HFRGA;
-				INFOPLIST_FILE = "Mindvalley Task/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Mindvalley Task/Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thirdwayv.Mindvalley-Task";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -428,8 +504,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 6GHM8HFRGA;
-				INFOPLIST_FILE = "Mindvalley Task/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Mindvalley Task/Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thirdwayv.Mindvalley-Task";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -514,6 +592,7 @@
 				04D4880C1F75A6C90014BF2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04D4880D1F75A6C90014BF2A /* Build configuration list for PBXNativeTarget "Mindvalley TaskTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +601,7 @@
 				04D4880F1F75A6C90014BF2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04D488101F75A6C90014BF2A /* Build configuration list for PBXNativeTarget "Mindvalley TaskUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +610,7 @@
 				04D488121F75A6C90014BF2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
