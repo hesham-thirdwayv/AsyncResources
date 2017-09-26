@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="03H-1c-cVt">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Images Collection View Controller-->
+        <scene sceneID="8h9-qf-QS2">
+            <objects>
+                <collectionViewController id="XYF-OF-LM0" customClass="ImagesCollectionViewController" customModule="Mindvalley_Task" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="HRa-jI-LTT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="20" id="KXI-cO-LBV">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ImageCollectionViewCell" reuseIdentifier="ImageCollectionViewCell" id="R04-iV-unF" customClass="ImageCollectionViewCell" customModule="Mindvalley_Task" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I0C-uu-YdC">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="I0C-uu-YdC" firstAttribute="leading" secondItem="R04-iV-unF" secondAttribute="leading" id="Ayo-sQ-njZ"/>
+                                    <constraint firstItem="I0C-uu-YdC" firstAttribute="top" secondItem="R04-iV-unF" secondAttribute="top" id="Bao-RH-uLu"/>
+                                    <constraint firstAttribute="bottom" secondItem="I0C-uu-YdC" secondAttribute="bottom" id="dud-m7-Un0"/>
+                                    <constraint firstAttribute="trailing" secondItem="I0C-uu-YdC" secondAttribute="trailing" id="qmy-xa-Bof"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageCell" destination="I0C-uu-YdC" id="nm0-yB-HHS"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="XYF-OF-LM0" id="DZh-b5-vHw"/>
+                            <outlet property="delegate" destination="XYF-OF-LM0" id="6iC-OD-2YG"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="2de-Mp-hv1"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kmn-gJ-O8B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1268" y="-110.19490254872565"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="S2M-aj-jzD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="03H-1c-cVt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HJy-6q-zcG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XYF-OF-LM0" kind="relationship" relationship="rootViewController" id="5Vz-hB-3iz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jqz-ge-aSD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="328.80000000000001" y="-110.19490254872565"/>
+        </scene>
+    </scenes>
+</document>
